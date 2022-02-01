@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style css-->
+    <Link rel="stylesheet" href="../css/style.css">
+    <title>Lista</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="lista.html">Lista Formulario</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+      <main class="content-fluid "  onload="cargarTabla()">
+          <div class="card">
+              <div class="table-title">
+                    <span id="title">Lista Formulario</span>
+                    <span id="text-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut est sem, porta eu odio ac, dictum tincidunt odio. 
+                    Praesent venenatis mollis nisi elementum cursus. Aliquam dictum interdum elit, 
+                    nec semper tortor posuere ut. Integer efficitur dui dui, quis tincidunt arcu consectetur ut. 
+                    In ac tempor leo. Donec vel sapien ut nisl suscipit molestie sit amet quis enim. 
+                    </span>
+              </div>
+              <div class="content-body col-md-12">
+                  <table class="table table-hover">
+                      <thead>
+                          <tr>
+                              <th style="width:210px;">Nombre</th>
+                              <th style="width:68px;">Rut Vendedor</th>
+                              <th style="width:60px;">Patente vehiculo</th>
+                              <th style="width:60px;">Marca vehiculo</th>
+                              <th style="width:60px;">Modelo vehiculo</th>
+                              <th style="width:60px;">Color vehiculo</th>
+                              <th style="width:60px;">Eliminar</th>
+                          </tr>
+                      </thead>
+                      <tbody id="tbody-registros" onload="cargarTabla()">
+
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </main>
+
+      <script type="text/javascript" src="../js/script.js"> </script>
+</body>
+</html>

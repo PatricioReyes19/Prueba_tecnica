@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style css-->
+    <Link rel="stylesheet" href="../css/style.css">
+
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+      <div class="menu">
+        <img>
+        <nav>
+            <ul>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="lista.html">Lista Formulario</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    
+    <main class="content-fluid">
+
+      <div class="content">
+        <div id="title" class="text-center">Nuevo Formulario</div>
+        <span id="text-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut est sem, porta eu odio ac, dictum tincidunt odio. 
+                Praesent venenatis mollis nisi elementum cursus. Aliquam dictum interdum elit, 
+                nec semper tortor posuere ut. Integer efficitur dui dui, quis tincidunt arcu consectetur ut. 
+                In ac tempor leo. Donec vel sapien ut nisl suscipit molestie sit amet quis enim. 
+        </span>
+          
+        <div class="content-body">
+          <form id="registro" name="registro">
+            <div class="form-group">
+              <div id="title-vendedor">Datos del vendedor:</div>
+                <div class="container">
+                  <label class="form-label" for="nombreAp-txt">Nombre y Apellido</label>
+                  <input type="text" id="nombreAp-txt" class="form-name" placeholder="Nombre Apellido">
+                  
+                  <label class="form-label" for="rutTxt" id="rutTxt">Rut del vendedor</label>
+                  <input type="text" id="rutTxt" class="rut" placeholder="rut">
+                  
+                </div>
+              </div>
+
+              <hr>
+
+              <div id="title-vehiculo">Datos del vehiculo:</div>
+                <div class="container">
+                  <label class="form-label" for="patenteTxt">Patente del vehiculo:</label>
+                  <input type="text" id="patenteTxt" class="patente" placeholder="Patente">
+
+                  <!-- Marca -->
+                  <label class="form-label" id="title-marcas">Marca del Vehiculo:</label>
+                      <select name="  " id="marcas" onchange="cambia_marca()" required>
+                        <option value="0" selected >Seleccione...</option>
+                        <option value="FORD">Ford</option>
+                        <option value="CHEVROLET">Chevrolet</option>
+                        <option value="SUZUKI">Suzuki</option>
+                        <option value="TESLA">Tesla</option>
+                        <option value="HONDA">Honda</option>
+                      </select>
+
+                  <!-- Modelo -->
+                  <label class="form-label" id="title-modelos">Modelo del Vehiculo:</label>
+                      <select id="modelos">
+                        <option value="0" selected></option>
+                      </select>
+
+                  <!-- Color -->
+                  <label class="form-label" id="title-color">Color del Vehiculo:</label>
+                      <select id="color" required>
+                        <option value="0">Seleccione...</option>
+                        <option value="BLANCO">Blanco</option>
+                        <option value="ROJO">Rojo</option>
+                        <option value="NEGRO">Negro</option>
+                        <option value="AMARILLO">Amarillo</option>
+                        <option value="AZUL">Azul</option>
+                      </select>
+
+                </div>
+                <hr>
+              </div>
+
+            </div>
+            
+              <button type="button" class="btn" id="guardar-btn" onclick="guardar()">Guardar</button>
+            </form>
+        </div>
+      </div>
+
+  </main>
+
+  <script type="text/javascript" src="../js/cargarmodelos.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>

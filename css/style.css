@@ -1,0 +1,231 @@
+/** globals **/
+:root{
+    --black: #191919;
+    --white: #FFFFFF;
+    --background-color: #002EFF;
+    --border: #999999;
+    --text-label: #191919;
+    --color-button: #FF3D00;
+    --color-hr: #CCCCCC;
+
+    --font-size-label: 16px;
+    --line-height-label: 19px;
+}
+
+/** navbar */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Barlow;
+}
+
+header{
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100px;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.menu{
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    padding-right: 308px;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 25px;
+    top: 39px;
+    padding: 25px 0;
+    float: left;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height:22px;
+    color: var(--white);
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/** Fin estilo navbar */
+
+/** Formulario */
+.content-fluid{
+    margin: 80px 0px 5px 0px;
+    align-items: center;
+    left: 307px;
+    position: absolute;
+    width:825px;
+    height:calc(100%);
+}
+
+#title{
+    position: absolute;
+    width:226px;
+    height:36px;
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--black);
+}
+
+#text-lorem{
+    position: absolute;
+    width:100%;
+    height:44px;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black);
+    top: 46px;
+}
+
+.content-body{
+    position:absolute;
+    top: 145px;
+    width: 100%;
+    display: flex;
+    gap:12px;
+}
+
+#title-vendedor, 
+#title-vehiculo{
+    width: 157px;
+    height: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--background-color);
+}
+
+.container{
+    position: relative;
+}
+
+label {
+    font-size: var(--font-size-label);
+    color: var(--text-color-label);
+    margin: 15px 0px 5px 0px;
+    display: inline-block;
+}
+
+input[type="text"]{
+    position: absolute;
+    display: block;
+    border: 1px solid var(--border);
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 45px;
+    background: var(--white);
+    margin: 5px 0px 15px 0px;
+}
+
+#nombreAp-txt{
+    width: 540px;
+}
+
+#rutTxt{
+    width: 255px;
+    left:570px;
+    position: absolute;
+}
+
+#patenteTxt{
+    width: 255px;
+}
+
+#title-marcas,
+#marcas{
+    left:280px;
+    position: absolute;
+}
+
+#title-modelos,
+#modelos{
+    left: 570px;
+    position: absolute;
+}
+
+#title-color{
+    top: 85px;
+    position: absolute;
+    left: 0px;
+}
+
+#color{
+    top: 120px;
+    position: absolute;
+    margin-bottom: 15px;
+}
+
+select{
+    display:block;
+    height: 45px;
+    width: 255px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 5px 0px 15px 0px;
+}
+
+.btn{
+    position: absolute;
+    align-items: center;
+    width: 255px;
+    height: 45px;
+    background-color: var(--color-button);
+    color: var(--white);
+    border-radius: 22.5px;
+    margin-top: calc(60%);
+}
+
+hr{
+    width: 825px;
+    height: 0px;
+    border: 1px solid var(--color-hr);
+    padding-top: 0px;
+    margin-top: 65px;
+    margin-bottom: 11px;
+}
+
+/** Lista formulario **/
+
+.table{
+    width: 100%;
+}
+
+.table tr th{
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid var(--border);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    text-align: center;
+    
+    justify-content: center;
+    color: var(--text-label);
+}
+
+.table tbody{
+    text-align: center;
+}
+
+@media (max-width:375px) {
+
+
+}
